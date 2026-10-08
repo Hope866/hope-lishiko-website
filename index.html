@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Hope Lishiko's personal student portfolio website">
+
+    <title>Hope Lishiko Student Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="intro">
+
+            <h1>Hope Lishiko</h1>
+
+            <p class="programme">
+                Cyber Security Student at Mulungushi University
+            </p>
+            <P>
+                202508681
+            </P>
+            <p>
+                Welcome to my personal student website. This website
+                presents my interests, learning journey, projects,
+                skills and goals as a university student.
+            </p>
+
+            <a class="main-button" href="#projects">
+                View My Projects
+            </a>
+
+            <button id="themeButton" type="button">
+                Switch to Dark Mode
+            </button>
+
+        </div>
+
+        <!-- Mobile navigation button -->
+        <button id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">
+            ☰ Menu
+        </button>
+
+        <nav id="mainNav">
+
+            <a href="#about">About Me</a>
+
+            <a href="#hobbies">My Hobbies</a>
+
+            <a href="#learning">My Learning Plan</a>
+
+            <a href="#projects">Projects & Skills</a>
+
+            <a href="#photos">My Photos</a>
+
+            <a href="#media">My Media</a>
+
+            <a href="#study-calculator">Study Calculator</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
+                MDN Learn
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+         ABOUT ME
+         ========================= -->
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                My name is Hope Lishiko, and I am a Cyber Security
+                student at Mulungushi University. I am interested in
+                technology and enjoy learning how computers, software
+                and digital systems work. My studies have introduced
+                me to programming, computer science, web technologies
+                and other areas of computing. I want to continue
+                developing my technical skills through practical
+                projects and consistent learning.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+         HOBBIES
+         ========================= -->
+
+        <section id="hobbies">
+
+            <h2>My Hobbies</h2>
+
+            <ul>
+
+                <li>Reading</li>
+
+                <li>Watching movies</li>
+
+                <li>Coding</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =========================
+         LEARNING PLAN
+         ========================= -->
+
+        <section id="learning">
+
+            <h2>My Learning Plan</h2>
+
+            <p>
+                My learning plan focuses on improving my technical
+                knowledge and becoming more confident in practical
+                computing tasks.
+            </p>
+
+            <h3>My Learning Steps</h3>
+
+            <ol>
+
+                <li>
+                    Practise programming and problem solving regularly.
+                </li>
+
+                <li>
+                    Build small practical projects using web and
+                    programming technologies.
+                </li>
+
+                <li>
+                    Review class material and practise what I learn.
+                </li>
+
+            </ol>
+
+
+            <h3>Learning Schedule</h3>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Activity</th>
+                            <th>Frequency</th>
+                            <th>Goal</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Programming Practice</td>
+                            <td>3 times a week</td>
+                            <td>Improve coding skills</td>
+                        </tr>
+
+                        <tr>
+                            <td>Web Development</td>
+                            <td>2 times a week</td>
+                            <td>Build websites</td>
+                        </tr>
+
+                        <tr>
+                            <td>Course Revision</td>
+                            <td>Daily</td>
+                            <td>Understand class material</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         PROJECTS AND SKILLS
+         ========================= -->
+
+        <section id="projects">
+
+            <h2>Projects & Skills</h2>
+
+            <p>
+                Below are examples of projects and skills I have
+                developed during my studies.
+            </p>
+
+
+            <!-- Project Search -->
+
+            <div class="project-filter">
+
+                <label for="projectSearch">
+                    Search Projects or Skills:
+                </label>
+
+                <input type="text" id="projectSearch" placeholder="Type to search...">
+
+                <button type="button" id="resetProjects">
+                    Reset
+                </button>
+
+                <p id="projectMessage">
+                    Showing all projects.
+                </p>
+
+            </div>
+
+
+            <!-- Project 1 -->
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <h3>Java Programming</h3>
+
+                    <p>
+                        A project demonstrating my understanding
+                        of basic Java programming.
+                    </p>
+
+                    <button type="button" class="details-button" aria-expanded="false">
+                        Show Details
+                    </button>
+
+                    <div class="project-details" hidden>
+
+                        <p>
+                            I have learned variables, loops, arrays,
+                            methods, classes, objects and basic
+                            object-oriented programming in Java.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2 -->
+
+                <article class="project-card">
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        A personal website created using HTML,
+                        CSS and JavaScript.
+                    </p>
+
+                    <button type="button" class="details-button" aria-expanded="false">
+                        Show Details
+                    </button>
+
+                    <div class="project-details" hidden>
+
+                        <p>
+                            I have learned how to structure webpages
+                            with HTML, style them with CSS and add
+                            interactive features using JavaScript.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3 -->
+
+                <article class="project-card">
+
+                    <h3>Programming Problem Solving</h3>
+
+                    <p>
+                        Practical programming exercises completed
+                        during my studies.
+                    </p>
+
+                    <button type="button" class="details-button" aria-expanded="false">
+                        Show Details
+                    </button>
+
+                    <div class="project-details" hidden>
+
+                        <p>
+                            I have practised algorithms, arrays,
+                            loops, functions and solving programming
+                            problems step by step.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         PHOTOS
+         ========================= -->
+
+        <section id="photos">
+
+            <h2>My Photos</h2>
+
+            <div class="gallery">
+
+                <figure>
+
+                    <img id="galleryImage" src="photo1.jpeg" alt="Hope Lishiko personal photo">
+
+                    <figcaption id="galleryCaption">
+                        Photo 1 - My personal photo.
+                    </figcaption>
+
+                </figure>
+
+
+                <div class="gallery-controls">
+
+                    <button type="button" id="previousPhoto">
+                        Previous
+                    </button>
+
+                    <button type="button" id="nextPhoto">
+                        Next
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         MEDIA
+         ========================= -->
+
+        <section id="media">
+
+            <h2>My Media</h2>
+
+
+            <div class="media-item">
+
+                <h3>My Video</h3>
+
+                <p>
+                    This video is included as part of my personal
+                    website media content.
+                </p>
+
+                <video controls>
+
+                    <source src="videos/intro.mp4" type="video/mp4">
+
+                    Your browser does not support video.
+
+                </video>
+
+            </div>
+
+
+            <div class="media-item">
+
+                <h3>My Audio</h3>
+
+                <p>
+                    This audio recording is included as part of
+                    my website media content.
+                </p>
+
+                <audio controls>
+
+                    <source src="videos/voice.mp3" type="audio/mpeg">
+
+                    Your browser does not support audio.
+
+                </audio>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+         STUDY HOURS CALCULATOR
+         ========================= -->
+
+        <section id="study-calculator">
+
+            <h2>Study Hours Calculator</h2>
+
+            <p>
+                Enter your planned study hours per day and the
+                number of days you intend to study each week.
+            </p>
+
+
+            <form id="studyForm">
+
+                <label for="hoursPerDay">
+                    Planned study hours per day:
+                </label>
+
+                <input type="number" id="hoursPerDay" min="0.1" step="0.1" placeholder="Example: 3" required>
+
+
+                <label for="daysPerWeek">
+                    Study days per week:
+                </label>
+
+                <input type="number" id="daysPerWeek" min="1" max="7" step="1" placeholder="Example: 5" required>
+
+
+                <button type="submit">
+                    Calculate Weekly Hours
+                </button>
+
+            </form>
+
+
+            <p id="studyResult"></p>
+
+        </section>
+
+
+        <!-- =========================
+         CONTACT
+         ========================= -->
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Browser demonstration only — no message is sent.
+            </p>
+
+
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name:
+                    </label>
+
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email:
+                    </label>
+
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="topic">
+                        Topic:
+                    </label>
+
+                    <select id="topic" name="topic" required>
+
+                        <option value="">
+                            Select a topic
+                        </option>
+
+                        <option value="Web Development">
+                            Web Development
+                        </option>
+
+                        <option value="Programming">
+                            Programming
+                        </option>
+
+                        <option value="Cyber Security">
+                            Cyber Security
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message:
+                    </label>
+
+                    <textarea id="message" name="message" rows="6" required placeholder="Write your message">
+                </textarea>
+
+                </div>
+
+
+                <button type="submit">
+                    Validate Form
+                </button>
+
+                <p id="formFeedback" aria-live="polite">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+     FOOTER
+     ========================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Hope Lishiko. All rights reserved.
+        </p>
+
+        <p>
+            Student Portfolio Website
+        </p>
+
+        <p>
+            <a href="https://github.com/" target="_blank" rel="noopener">
+                View Source on GitHub
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
